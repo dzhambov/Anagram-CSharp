@@ -25,22 +25,6 @@ namespace Anagram.Models
     {
       _instances.Clear();
     }
-
-    public static void ToArr()
-    {
-
-      string val = Console.ReadLine();
-
-      foreach (Word thisWord in Word.GetAll())
-      {
-        char[] chr = thisWord.Letters.ToLower().ToCharArray(); 
-        
-        Array.Sort(chr);
-
-        string val2 = new string (chr);
-
-
-      }
-    }
+    
   }
 }
